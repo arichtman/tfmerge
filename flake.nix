@@ -12,6 +12,7 @@
           pkgs = import nixpkgs {
             inherit system;
             overlays = [ gomod2nix.overlays.default ];
+            config.allowUnfree = true;
           };
 
         in
